@@ -57,7 +57,7 @@ setup(
     ],
     include_package_data=True,
     install_requires=[
-        "django >= 2.2",
+        "django >= 2.2.13",
         "djangorestframework >= 3.10",
         "django-appconf>=1.0.4",
         "Pillow>=8.1.0"

@@ -43,7 +43,6 @@ if sys.argv[-1] == 'tag':
 
 readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
-# requirements = open('requirements.txt').readlines()
 
 setup(
     name='django-rest-avatar',
@@ -60,7 +59,8 @@ setup(
     install_requires=[
         "django >= 2.2",
         "djangorestframework >= 3.10",
-        "django-appconf>=1.0.4"
+        "django-appconf>=1.0.4",
+        "Pillow>=8.1.0"
     ],
     license="BSD",
     zip_safe=False,

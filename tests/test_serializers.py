@@ -13,6 +13,7 @@ class TestSerializers(TestCase):
 
     def test_validate_file_too_big(self):
         # TODO how to upload images?
+        data = {}
         serializer = serializers.AvatarSerializer(data=data)
         assert not serializer.is_valid()
 

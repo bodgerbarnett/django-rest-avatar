@@ -17,6 +17,9 @@ class Avatar(models.Model):
     avatar = models.ImageField(upload_to=avatar_file_path)
 
     def set_primary(self):
-        self.user.avatars.update(is_primary=False)
+        primary_avatars = self.user.avatars.filter(is_primary=True)
+        primary_avatars = primary_avatars.exclude(pk=self.pk)
+
+        primary_avatars.update(is_primary=False)
         self.is_primary = True
         self.save()

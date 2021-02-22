@@ -1,0 +1,4 @@
+django==2.2
+djangorestframework==3.10
+django-appconf==1.0.4
+Pillow==8.1.0

@@ -1,13 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""
-test_django-rest-avatar
-------------
-
-Tests for `django-rest-avatar` models module.
-"""
-
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 

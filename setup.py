@@ -59,8 +59,8 @@ setup(
     include_package_data=True,
     install_requires=[
         "django >= 2.2",
-        "djangorestframework >= 3.10"
-
+        "djangorestframework >= 3.10",
+        "django-appconf>=1.0.4"
     ],
     license="BSD",
     zip_safe=False,
